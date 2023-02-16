@@ -18,14 +18,7 @@ class Customers
     private $phone;
     private $password;
 
-    /**
-     * Customers constructor.
-     * @param $name
-     * @param $address
-     * @param $email
-     * @param $phone
-     * @param $password
-     */
+  
     public function __construct($name=null, Address $address=null, $email=null, $phone=null, $password=null)
     {
         $this->name = $name;
@@ -43,33 +36,24 @@ class Customers
         return $this->name;
     }
 
-    /**
-     * @return mixed
-     */
     public function getAddress():Address
     {
         return $this->address;
     }
 
-    /**
-     * @return mixed
-     */
+    
     public function getEmail()
     {
         return $this->email;
     }
 
-    /**
-     * @return mixed
-     */
+ 
     public function getPhone()
     {
         return $this->phone;
     }
 
-    /**
-     * @return mixed
-     */
+ 
     public function getPassword()
     {
         return $this->password;
