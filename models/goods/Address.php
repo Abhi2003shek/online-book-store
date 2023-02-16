@@ -17,13 +17,7 @@ class Address
     private $street;
     private $buildNo;
 
-    /**
-     * Address constructor.
-     * @param $country
-     * @param $city
-     * @param $street
-     * @param $buildNo
-     */
+
     public function __construct($country, $city, $street, $buildNo)
     {
         $this->country = $country;
@@ -32,33 +26,23 @@ class Address
         $this->buildNo = $buildNo;
     }
 
-    /**
-     * @return mixed
-     */
     public function getCountry ()
     {
         return $this->country;
     }
 
-    /**
-     * @return mixed
-     */
     public function getCity ()
     {
         return $this->city;
     }
 
-    /**
-     * @return mixed
-     */
+ 
     public function getStreet ()
     {
         return $this->street;
     }
 
-    /**
-     * @return mixed
-     */
+  
     public function getBuildNo ()
     {
         return $this->buildNo;
