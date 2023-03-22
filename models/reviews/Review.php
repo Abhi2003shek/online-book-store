@@ -15,11 +15,7 @@ class Review
     protected $opinion;
     protected $degreeReview;
 
-    /**
-     
-     * @param $opinion
-     * @param $degreeReview
-     */
+    
     protected function __construct ($opinion, $degreeReview)
     {
         $this->opinion = $opinion;
