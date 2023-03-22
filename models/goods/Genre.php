@@ -15,27 +15,20 @@ class Genre
     private $description;
     private $id;
 
-    /**
-     * Genre constructor.
-     * @param $description
-     */
+    
     public function __construct($description,$id=null)
     {
         $this->description = $description;
         $this->id=$id;
     }
 
-    /**
-     * @return mixed
-     */
+    
     public function getDescription ()
     {
         return $this->description;
     }
 
-    /**
-     * @return null
-     */
+    
     public function getId ()
     {
         return $this->id;
