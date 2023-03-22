@@ -10,14 +10,9 @@ spl_autoload_register(function ($class){
 
 interface FileInterface
 {
-    /**
-     * @return bool if the file is in temp
-     */
+    
     public function isTemp():bool;
 
-    /**
-     * @param Condition|null $co
-     * @return bool true if it's successfully moved .
-     */
+    
     public function move(Condition $co=null):bool;
 }
