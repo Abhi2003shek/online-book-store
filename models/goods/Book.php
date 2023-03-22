@@ -25,20 +25,7 @@ class Book implements Damage
     private $quantity;
     private static $objects=[];
 
-    /**
-     * Book constructor.
-     * @param $id
-     * @param $author
-     * @param $publisher
-     * @param $genre
-     * @param $isbn
-     * @param $sellPrice
-     * @param $buyPrice
-     * @param $image
-     * @param $description
-     * @param $actualQuantity
-     * @param $quantity
-     */
+    
     public function __construct($id, $name,int $isbn,float $sellPrice,float $buyPrice,string $image,string $description,int $actualQuantity,int $quantity,Author $author=NULL,Publishers $publisher=NULL, Genre $genre=NULL)
     {
         $this->id = $id;
@@ -93,105 +80,79 @@ class Book implements Damage
         $this->genre=NULL;
     }
 
-    /**
-     * @return mixed
-     */
+   
     public function getId():int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
+   
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return Author
-     */
+    
     public function getAuthor(): Author
     {
         return $this->author;
     }
 
-    /**
-     * @return publisher
-     */
+    
     public function getPublisher(): Publishers
     {
         return $this->publisher;
     }
 
-    /**
-     * @return Genre
-     */
+    
     public function getGenre(): Genre
     {
         return $this->genre;
     }
 
-    /**
-     * @return int
-     */
+    
     public function getIsbn(): int
     {
         return $this->isbn;
     }
 
-    /**
-     * @return float
-     */
+    
     public function getSellPrice(): float
     {
         return $this->sellPrice;
     }
 
-    /**
-     * @return float
-     */
+    
     public function getBuyPrice(): float
     {
         return $this->buyPrice;
     }
 
-    /**
-     * @return string
-     */
+    
     public function getImage(): string
     {
         return $this->image;
     }
 
-    /**
-     * @return string
-     */
+    
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @return int
-     */
+    
     public function getActualQuantity(): int
     {
         return $this->actualQuantity;
     }
 
-    /**
-     * @return int
-     */
+    
     public function getQuantity(): int
     {
         return $this->quantity;
     }
 
-    /**
-     * @return array
-     */
+    
     public static function getObjects(): array
     {
         return self::$objects;
